@@ -6,12 +6,12 @@
 
 <div class="navarea">
     <div class="inner clear">
-        <a class="lk select" href="{{ site.baseurl }}/index.html">首頁</a>
-        <a class="lk" href="{{ site.baseurl }}/note.html">筆記</a>
-        <a class="lk" href="{{ site.baseurl }}/comment.html">交流</a>
+        <a class="lk select" id="nav0" href="{{ site.baseurl }}/index.html">首頁</a>
+        <a class="lk" id="nav1" href="{{ site.baseurl }}/note.html">筆記</a>
+        <a class="lk" id="nav2" href="{{ site.baseurl }}/comment.html">交流</a>
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="lk" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <a class="lk" id="nav3" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
     </div>

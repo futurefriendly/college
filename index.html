@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<div id="pageId" title="0"></div>
 <div class="bannerarea">
     <div class="owl-carousel owl-loaded owl-drag">
         <div class="item">
@@ -48,3 +48,25 @@ layout: default
     </ul>
     </div>
 </div>
+
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop : true,
+    lazyLoad : true,
+    smartSpeed : 500,
+    autoplay : true,
+    autoplayTimeout : 5000,
+    autoplayHoverPause : true,
+    nav : true,
+    navText : ['<span class="icon-arrow-left2"></span>','<span class="icon-arrow-right2"></span>'],
+    responsiveClass : true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+    }
+  });
+});
+</script>
