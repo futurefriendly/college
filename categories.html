@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div id="pageId" title="1"></div>
+<div class="detailarea">
+    <div class="inner">
+        <h3>筆記</h3>
+        <div class="info">
+        </div>
+        {% for category in site.categories %}
+        <h3>{{ category | first }}</h3>
+        </span>{{ category | last | size }}</span>
+        <ul class="notelist clear">
+            {% for post in category.last %}
+                <li class="item">{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+
+        <p class="rss-subscribe tx_c">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    </div>
+</div>
