@@ -10,10 +10,10 @@ layout: default
         </div>
         {% for category in site.categories %}
         <h3>{{ category | first }}</h3>
-        </span>{{ category | last | size }}</span>
+        <p class="c_t9">共{{ category | last | size }}篇</p>
         <ul class="notelist clear">
             {% for post in category.last %}
-                <li class="item">{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class="item">{{ post.date | date: "%b %-d, %Y" }}, <a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
         {% endfor %}
