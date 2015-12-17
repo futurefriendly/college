@@ -79,14 +79,3 @@ Above all, appreciate to Brad Frost's great work.
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/9.jpg)
 
 拥抱未知，知难而上，准备好迎接Web的未来。
-
-----------
-
-**“面向未来的友好设计”微信订阅号：海棠花海**
-
-- 微信号：haitangsea  
-- 快速关注：点击题目下方小字“海棠花海”  
-- 投稿合作：bennychia@vip.qq.com  
-- 长按下方图片-识别图中二维码-关注
-
-![面向未来的友好设计]({{ site.baseurl }}/assets/images/wechat.jpg)
