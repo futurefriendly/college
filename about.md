@@ -8,3 +8,4 @@ permalink: /about.html
 
 <p>{{ site.description }}</p>
 <p>{{ site.description_en }}</p>
+<p>書院接受投稿，以markdown格式為佳，請聯繫3290454918@qq.com</p>
