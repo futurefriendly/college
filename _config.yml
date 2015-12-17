@@ -16,3 +16,6 @@ github_username:  futurefriendly
 
 # Build settings
 markdown: kramdown
+
+sass:
+    style: compressed
