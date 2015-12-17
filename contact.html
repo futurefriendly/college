@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div id="pageId" title="2"></div>
+<div class="commentarea">
+    <div class="inner">
+    <h3>聯絡</h3>
+    <div class="tb_form">
+        <form method="POST" action="//formspree.io/bennychia@vip.qq.com">
+        <table>
+            <tr>
+                <td>
+                    <p>電郵</p>
+                    <div class="inputTxt">
+                        <input type="email" name="_replyto" placeholder="example@domain.com" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>內容</p>
+                    <div class="inputTxt">
+                        <textarea name="message" placeholder="Your Content" style="height:100px"></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tx_c">
+                    <input type="hidden" name="_next" value="{{ site.baseurl }}/mailsuccess.html" />
+                    <label class="btn btn2" style="display:inline-block">
+                        <input type="submit" class="t" value="發送" style="padding-left:40px; padding-right:40px" />
+                    </label>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    </div>
+</div>
