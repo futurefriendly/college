@@ -1,0 +1,18 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: "問津書院"
+email: "3290454918@qq.com"
+description: "@帝都，熱愛傳統文化，熟悉互聯網，一群愛學習愛聚會的大叔和小鮮肉。"
+baseurl: "/college" # the subpath of your site, e.g. /blog
+url: "http://futurefriendly.cn/college" # the base hostname & protocol for your site
+twitter_username: futurefriendly
+github_username:  futurefriendly
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="detailarea">
+    <div class="inner">
+        <h3>問津筆記</h3>
+        <div class="info">
+        </div>
+        <ul class="notelist clear">
+            {% for post in site.posts %}
+            <li class="item">
+                {{ post.date | date: "%b %-d, %Y" }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <p class="rss-subscribe tx_c">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="footarea">
+    <h3>微信公眾號</h3>
+    <p class="tx_c">Wechat QRcode</p>
+    <p class="wechat">
+        <img src="/assets/images/en.jpg" /><img src="/assets/images/zh.jpg" style="margin-left:20px" />
+    </p>
+
+    {% if site.github_username %}
+    <p class="tx_c">
+      {% include icon-github.html username=site.github_username %}
+    </p>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <p class="tx_c">
+      {% include icon-twitter.html username=site.twitter_username %}
+    </p>
+    {% endif %}
+
+    <p class="tx_c"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="tx_c"><a href="http://www.futurefriendly.cn">Future Friendly</a> & <a href="http://www.futurefriendly.cn/speak/">{{ site.title }}</a></p>
+    <p class="tx_c">{{ site.description }}</p>
+    <p class="tx_c">Love Chinese tranditional culture, Love design.</p>
+
+</div>

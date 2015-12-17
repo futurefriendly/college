@@ -1,0 +1,18 @@
+<div class="tophold"></div>
+<div class="toparea">
+    <h1><big>F</big>uture <big>F</big>riendly <big>C</big>ollege</h1>
+    <h2><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+</div>
+
+<div class="navarea">
+    <div class="inner clear">
+        <a class="lk select" href="/index.html">首頁</a>
+        <a class="lk" href="/note.html">筆記</a>
+        <a class="lk" href="/comment.html">交流</a>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="lk" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    </div>
+</div>
