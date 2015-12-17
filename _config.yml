@@ -21,4 +21,4 @@ markdown: kramdown
 sass:
     style: compressed
 
-categories: [note, presentation]
+categories: [note, activity]
