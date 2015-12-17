@@ -53,6 +53,20 @@
 .detailarea h3{ color:#b58e5b; font-size:24px; text-transform:uppercase; font-weight:bold; line-height:1.2em}
 .detailarea .info{ margin-bottom:30px}
 
+.detailarea .content h1,
+.detailarea .content h2,
+.detailarea .content h3,
+.detailarea .content h4,
+.detailarea .content h5,
+.detailarea .content h6{ color:#333; font-size:16px; font-weight:bold; line-height:1.2em; text-transform:uppercase;}
+
+.detailarea .content h1{ font-size:2.2em}
+.detailarea .content h2{ font-size:2em}
+.detailarea .content h3{ font-size:1.8em}
+.detailarea .content h4{ font-size:1.4em}
+.detailarea .content h5{ font-size:1.2em}
+.detailarea .content h6{ font-size:1em}
+
 .eventarea{ padding:30px 20px 50px; background:#fff;}
 .eventarea .inner{ max-width:$content-width; margin:0 auto;}
 .eventarea h3{ color:#b58e5b; font-size:20px; text-transform:uppercase;}
