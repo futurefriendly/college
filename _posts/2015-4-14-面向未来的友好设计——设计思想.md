@@ -1,8 +1,8 @@
 ---
 layout: post
-category : Design
+category : note
 tagline: "Supporting tagline"
-tags : [设计]
+tags : [design]
 author : Future Friendly
 ---
 
