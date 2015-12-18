@@ -18,7 +18,11 @@ layout: default
             {% endfor %}
         </ul>
 
-        <p class="rss-subscribe tx_c">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <p class="rss-subscribe tx_c">
+            <span class="btn btn2" style="display:inline-block">
+                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS訂閱</a>
+            </span>
+        </p>
 
     </div>
 </div>
