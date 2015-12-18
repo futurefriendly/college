@@ -17,7 +17,7 @@ input,textarea,select,button{ outline: none; resize:none; font:16px/1.5 Helvetic
 select{font-size:12px}
 button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
 strong{font-weight:800}
-a{ text-decoration: none; outline: none; cursor: pointer; color:#b58e5b}
+a{ text-decoration: none; outline: none; cursor: pointer;}
 a:link,label,body{ -webkit-tap-highlight-color:transparent; -webkit-focus-ring-color:transparent;}
 a:hover{ text-decoration:none;}
 a:active{ background:none;}
