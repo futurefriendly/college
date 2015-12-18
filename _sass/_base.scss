@@ -22,6 +22,7 @@ a:link,label,body{ -webkit-tap-highlight-color:transparent; -webkit-focus-ring-c
 a:hover{ text-decoration:none;}
 a:active{ background:none;}
 
+.c_t3{ color:#b58e5b}
 .c_t9{ color:#999}
 .tx_c{ text-align:center;}
 
@@ -32,7 +33,7 @@ a:active{ background:none;}
 .vis_on{ visibility: visible;}
 .vis_off{ visibility: hidden;}
 
-/* 边距 */
+/* margin padding */
 .mt5{ margin-top:5px}
 .mr5{ margin-right:5px}
 .mb5{ margin-bottom:5px}
@@ -67,11 +68,50 @@ a:active{ background:none;}
 .pb20{ padding-bottom:20px}
 .pl20{ padding-left:20px}
 
-/* 对齐 */
+/* align */
 .vt_t{ vertical-align:top}
 .vt_m{ vertical-align:middle}
 .vt_b{ vertical-align:bottom}
 .vt_bl{ vertical-align:baseline;}
+
+/* font
+----------------------------------------------------------------*/
+
+/* family */
+.tx_song{font-family:SimSun,Helvetica}
+.tx_yh{font-family:Microsoft YaHei,Mingliu,Helvetica,sans-serif}
+.tx_ar{ font-family:Arial}
+.tx_ss{ font-family:sans-serif}
+.tx_code{ font-family:Courier New}
+
+/* size */
+.tx_12{ font-size:.75rem;}
+.tx_14{ font-size:.875rem;}
+.tx_16{ font-size:1rem;}
+.tx_18{ font-size:1.125rem;}
+.tx_20{ font-size:1.25rem;}
+.tx_22{ font-size:1.375rem;}
+.tx_24{ font-size:1.5rem;}
+.tx_26{ font-size:1.625rem;}
+.tx_28{ font-size:1.75rem;}
+.tx_30{ font-size:1.875rem;}
+
+/* weight */
+.tx_b{ font-weight: 800}
+.tx_n{ font-weight:normal}
+
+/* decoration */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* align */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+/* break */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
 @font-face {
     font-family: 'baskerville';

@@ -40,6 +40,11 @@
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
 }
+.btn input,
+.btn button{
+    -webkit-appearance:none;
+    appearance:none;
+}
 
 .e_btn_inb{ display:inline-block; vertical-align:middle}
 .e_btn_inb a,
