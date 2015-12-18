@@ -24,3 +24,7 @@ sass:
 categories: [note, activity]
 
 permalink: /college/404.html
+
+redcarpet:
+  extensions: [fenced_code_blocks]
+  render_options:
