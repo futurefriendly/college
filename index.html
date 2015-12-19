@@ -36,7 +36,7 @@ layout: default
     <h3>Events</h3>
     <ul class="eventlist clear">
 
-        {% for post in site.posts %}
+        {% for post in site.posts limit:4 %}
         {% if post.categories contains 'activity' %}
         <li class="item">
             <div class="c1">
@@ -49,7 +49,6 @@ layout: default
             </div>
         </li>
         {% endif %}
-
         {% endfor %}
     </ul>
     </div>
