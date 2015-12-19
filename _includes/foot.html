@@ -9,7 +9,15 @@ $(function(){
 
 	$(".navarea .inner").owlCarousel({
 		dots : false,
-		autoWidth : true
+		autoWidth : true,
+		responsive : {
+			0 : {
+				rewind : false
+			},
+			700 : {
+				rewind : true
+			}
+		}
 	});
 });
 </script>
