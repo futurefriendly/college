@@ -1,10 +1,22 @@
 <script id="dsq-count-scr" src="//fflycollege.disqus.com/count.js" async></script>
 <script>
 $(function(){
-    $('.navarea .lk').removeClass('select');
+    $('#carousel-nav').removeClass('select');
     var navcount = $('#pageId').attr('title');
     if(navcount != undefined){
         $('.navarea #nav'+navcount).addClass('select');
-    }
+    };
+
+	$(".navarea .inner").owlCarousel({
+		dots : false,
+	    responsive:{
+	    	0 : {
+	    		items : 3.5
+	    	},
+	    	700 : {
+	    		items : 5
+	    	}
+	    }
+	});
 });
 </script>

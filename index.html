@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="pageId" title="0"></div>
 <div class="bannerarea">
-    <div class="owl-carousel owl-loaded owl-drag">
+    <div id="carousel-banner" class="owl-carousel owl-loaded owl-drag">
         <div class="item">
             <img class="owl-lazy" data-src="{{ site.baseurl }}/assets/images/guzhen.jpg" />
             <div class="txtarea">
@@ -51,7 +51,7 @@ layout: default
 
 <script>
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $("#carousel-banner").owlCarousel({
     loop : true,
     lazyLoad : true,
     smartSpeed : 500,
