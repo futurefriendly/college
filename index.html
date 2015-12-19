@@ -45,7 +45,7 @@ layout: default
                 <div class="date3">{{ post.schedule_t }}</div>
             </div>
             <div class="c2">
-                <div class="tit"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+                <div class="tit"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br /><small class="c_t9">{{ post.title_en }}</small></div>
             </div>
         </li>
         {% endif %}
