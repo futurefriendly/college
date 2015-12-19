@@ -111,6 +111,7 @@
 
 .navarea{ position:fixed; z-index:999; top:0; left:0; width:100%; overflow:hidden; border-bottom:#b9975b 4px solid;
     background: #115740; /* Old browsers */
+    background:rgba(17,87,64,.5);
     -webkit-backdrop-filter:saturate(180%) blur(20px)
 }
 .navarea .inner{ max-width:$content-width; margin:0 auto}
