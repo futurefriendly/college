@@ -160,6 +160,13 @@
     list-style: decimal;
 }
 
+.detailarea .content ul{
+    list-style: circle;
+}
+
+.detailarea strong{ font-weight:bold}
+.detailarea em{ font-style:italic;}
+
 .eventarea{ padding:30px 20px 50px; background:#fff;}
 .eventarea .inner{ max-width:$content-width; margin:0 auto;}
 .eventarea h3{ color:#b58e5b; font-size:20px; text-transform:uppercase;}
