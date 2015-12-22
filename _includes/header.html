@@ -11,11 +11,11 @@
         <a class="lk" id="nav2" href="{{ site.baseurl }}/college.html">書院</a>
         <a class="lk" id="nav3" href="{{ site.baseurl }}/school.html">學院</a>
         <a class="lk" id="nav4" href="{{ site.baseurl }}/contact.html">聯絡</a>
-        <a class="lk" href="javascript:;" style="padding:0 5em"></a>
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="lk" id="nav5" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
+        <a class="lk" href="javascript:;" style="padding:0 2em"></a>
     </div>
 </div>
