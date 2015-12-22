@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<div id="pageId" title="1"></div>
+<div id="pageId" title="3"></div>
 <div class="detailarea">
     <div class="inner">
-        <h3>活動</h3>
+        <h3>學院</h3>
         <div class="info">
         </div>
         <ul class="notelist clear">
             {% for post in site.posts %}
-            {% if post.categories contains 'activity' %}
+            {% if post.categories contains 'school' %}
             <li class="item">
-                {{ post.schedule_t }}, {{ post.schedule_m }} {{ post.schedule_d }}, {{ post.schedule_y }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                {{ post.date | date: "%b %-d, %Y" }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
             {% endif %}
             {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : note
+category : school
 tagline: "Supporting tagline"
 tags : [design]
 author : Future Friendly
