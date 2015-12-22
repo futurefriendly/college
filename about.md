@@ -6,6 +6,10 @@ permalink: /about.html
 
 <div id="pageId" title="5"></div>
 
-<p>{{ site.description }}</p>
-<p>{{ site.description_en }}</p>
-<p>書院接受投稿，以markdown格式為佳，請聯繫3290454918@qq.com</p>
+少些浮躁多讀書，做關心傳統文化的互聯網人。
+
+{{ site.description }}
+
+{{ site.description_en }}
+
+書院接受投稿，以markdown格式為佳，請聯繫3290454918@qq.com

@@ -8,7 +8,7 @@
 # Site settings
 title: "問津書院"
 email: "3290454918@qq.com"
-description: "@帝都，熱愛傳統文化，熟悉互聯網，一群愛學習愛聚會的大叔和小鮮肉。"
+description: "@帝都，一群愛學習愛聚會的大叔和小鮮肉。"
 description_en: "Love Chinese tranditional culture, Love design."
 baseurl: "/college" # the subpath of your site, e.g. /blog
 url: "http://futurefriendly.cn/college" # the base hostname & protocol for your site
