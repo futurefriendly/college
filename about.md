@@ -6,7 +6,7 @@ permalink: /about.html
 
 <div id="pageId" title="5"></div>
 
-少些浮躁多讀書，做關心傳統文化的互聯網人。
+書以明道。學以致用。做關心傳統文化的互聯網人。
 
 {{ site.description }}
 
