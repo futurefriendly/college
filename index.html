@@ -39,15 +39,7 @@ layout: default
 
         {% for post in site.posts limit:4 %}
         {% if post.category contains 'activity' %}
-        <li class="item">
-            <div class="c1">
-                <div class="date1">{{ post.schedule_m }}</div>
-                <div class="date2">{{ post.schedule_d }}</div>
-                <div class="date3">{{ post.schedule_t }}</div>
-            </div>
-            <div class="c2">
-                <div class="tit"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br /></div>
-            </div>
+        <li class="item">3
         </li>
         {% endif %}
         {% endfor %}
