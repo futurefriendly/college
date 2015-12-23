@@ -84,7 +84,7 @@
 .tb_form th{ width:30%; font-family:Helvetica,Arial,Mingliu,sans-serif}
 
 .tb_content,
-.detailarea table{ width:100%; border-collapse:collapse; margin:10px 0 0;}
+.detailarea table{ width:100%; border-collapse:collapse; margin-bottom:15px;}
 .tb_content th,
 .tb_content td,
 .detailarea th,
@@ -92,6 +92,7 @@
 .tb_content th,
 .detailarea th{ background:#f4f4f4;}
 .detailarea thead{ background:#eee}
+.detailarea thead th{ font-weight:bold}
 
 .owl-dots { position:absolute; left:0; width:100%; bottom:0; text-align: center; -webkit-tap-highlight-color: transparent; }
 .owl-dots .owl-dot { display: inline-block; zoom: 1; *display: inline; }
