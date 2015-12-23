@@ -78,10 +78,16 @@
 }
 
 .tb_form{padding:15px 0}
-.tb_form table{width:100%}
+.tb_form table,
+.detailarea table{width:100%}
+.detailarea th,
+.detailarea td,
 .tb_form th,
 .tb_form td{padding:5px 0;vertical-align:top;line-height:24px}
-.tb_form th{width:30%; font-family:Helvetica,Arial,Mingliu,sans-serif}
+.tb_form th,
+.detailarea th{ font-family:Helvetica,Arial,Mingliu,sans-serif}
+.tb_form th{ width:30%;}
+.detailarea thead{ background:#eee}
 
 .tb_content{ width:100%; border-collapse:collapse; margin:10px 0 0;}
 .tb_content th,.tb_content td{ padding:10px 15px; border:#e1e1e1 1px solid;}
