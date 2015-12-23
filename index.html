@@ -35,6 +35,8 @@ layout: default
     <div class="inner">
     <h3>Events</h3>
     <ul class="eventlist clear">
+
+        {% for post in site.posts limit:4 %}
         {% if post.category contains 'activity' %}
         <li class="item">
             <div class="c1">
@@ -47,7 +49,18 @@ layout: default
             </div>
         </li>
         {% endif %}
+        {% endfor %}
     </ul>
+    
+        <ul class="notelist clear">
+            {% for post in site.posts %}
+            {% if post.category contains 'activity' %}
+            <li class="item">
+                {{ post.schedule_t }}, {{ post.schedule_m }} {{ post.schedule_d }}, {{ post.schedule_y }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </div>
 </div>
 
