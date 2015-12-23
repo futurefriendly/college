@@ -10,7 +10,7 @@ layout: default
         </div>
         <ul class="notelist clear">
             {% for post in site.posts %}
-            {% if post.categories contains 'activity' %}
+            {% if post.category contains 'activity' %}
             <li class="item">
                 {{ post.schedule_t }}, {{ post.schedule_m }} {{ post.schedule_d }}, {{ post.schedule_y }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>

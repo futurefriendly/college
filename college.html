@@ -10,7 +10,7 @@ layout: default
         </div>
         <ul class="notelist clear">
             {% for post in site.posts %}
-            {% if post.categories contains 'college' %}
+            {% if post.category contains 'college' %}
             <li class="item">
                 {{ post.date | date: "%b %-d, %Y" }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
