@@ -267,19 +267,19 @@ devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已
 - **最重要的区别就是：网易的做法，rem值很好计算，淘宝的做法肯定得用计算器才能用好了。**不过要是你使用了less和sass这样的css处理器，就好办多了，以淘宝跟less举例，我们可以这样编写less：
 
 ```
-//定义一个变量和一个mixin
-@baseFontSize: 75;//基于视觉稿横屏尺寸/100得出的基准font-size
-.px2rem(@name, @px){
-    @{name}: @px / @baseFontSize * 1rem;
-}
-//使用示例：
-.container {
-    .px2rem(height, 240);
-}
-//less翻译结果：
-.container {
-    height: 3.2rem;
-}
+	//定义一个变量和一个mixin
+	@baseFontSize: 75;//基于视觉稿横屏尺寸/100得出的基准font-size
+	.px2rem(@name, @px){
+	    @{name}: @px / @baseFontSize * 1rem;
+	}
+	//使用示例：
+	.container {
+	    .px2rem(height, 240);
+	}
+	//less翻译结果：
+	.container {
+	    height: 3.2rem;
+	}
 ```
 
 ##6. 如何与设计协作
