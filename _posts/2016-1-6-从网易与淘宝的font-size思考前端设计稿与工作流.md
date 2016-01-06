@@ -45,13 +45,11 @@ author : 流云诸葛
 
 ##2. 简单问题简单解决
 
-我觉得有些web app并一定很复杂，比如拉勾网，你看看它的页面在iphone4,iphone6,ipad下的样子就知道了：
+我觉得有些web app并一定很复杂，比如拉勾网，你看看它的页面在iPhone4,iPhone6,ipad下的样子就知道了：
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/1.png)
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/2.png)
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/3.png)
+|iPhone4|iPhone6|iPhone6plus|
+|-|-|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/1.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/2.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/3.png)|
 
 它的页面有一个特点，就是：
 
@@ -62,7 +60,7 @@ author : 流云诸葛
 
 ![font-size]({{ site.baseurl }}/assets/images/160106b/4.png)
 
-这个规则是一套基本的适配规则，对于这种简单app来说已经足够，同时它也是后面要说的rem布局的基础。另外对于拉勾这种app可能需要额外媒介查询对布局进行调整的就是小屏幕设备。举例来说，因为现在很多设计稿是根据iphone6的尺寸来的，而iphon6设备宽的逻辑的像素是375px，而iphone4的逻辑像素是320个像素，所以如果你根据设计稿做出来的东西，在iphone4里面可能显示不下，比如说拉钩网底部那个下载框，你对比看下就知道了，
+这个规则是一套基本的适配规则，对于这种简单app来说已经足够，同时它也是后面要说的rem布局的基础。另外对于拉勾这种app可能需要额外媒介查询对布局进行调整的就是小屏幕设备。举例来说，因为现在很多设计稿是根据iPhone6的尺寸来的，而iphon6设备宽的逻辑的像素是375px，而iPhone4的逻辑像素是320个像素，所以如果你根据设计稿做出来的东西，在iPhone4里面可能显示不下，比如说拉钩网底部那个下载框，你对比看下就知道了，
 
 这是4：
 
@@ -104,7 +102,7 @@ author : 流云诸葛
 
 ![font-size]({{ site.baseurl }}/assets/images/160106b/13.png)
 
-它是根据什么计算的，这就跟设计稿有关了，拿网易来说，它的设计稿应该是基于iphone4或者iphone5来的，所以它的设计稿竖直放时的横向分辨率为640px，为了计算方便，取一个100px的`font-size`为参照，那么body元素的宽度就可以设置为`width: 6.4rem`，于是html的`font-size`=deviceWidth / 6.4。这个deviceWidth就是viewport设置中的那个deviceWidth。根据这个计算规则，可得出本部分开始的四张截图中html的`font-size`大小如下：
+它是根据什么计算的，这就跟设计稿有关了，拿网易来说，它的设计稿应该是基于iPhone4或者iPhone5来的，所以它的设计稿竖直放时的横向分辨率为640px，为了计算方便，取一个100px的`font-size`为参照，那么body元素的宽度就可以设置为`width: 6.4rem`，于是html的`font-size`=deviceWidth / 6.4。这个deviceWidth就是viewport设置中的那个deviceWidth。根据这个计算规则，可得出本部分开始的四张截图中html的`font-size`大小如下：
 
 	deviceWidth = 320，font-size = 320 / 6.4 = 50px
 	deviceWidth = 375，font-size = 375 / 6.4 = 58.59375px
@@ -137,8 +135,8 @@ author : 流云诸葛
 
 - 1 先拿设计稿竖着的横向分辨率除以100得到body元素的宽度：
 
-	如果设计稿基于iphone6，横向分辨率为750，body的width为750 / 100 = 7.5rem
-	如果设计稿基于iphone4/5，横向分辨率为640，body的width为640 / 100 = 6.4rem
+	如果设计稿基于iPhone6，横向分辨率为750，body的width为750 / 100 = 7.5rem
+	如果设计稿基于iPhone4/5，横向分辨率为640，body的width为640 / 100 = 6.4rem
 
 - 2 布局时，设计图标注的尺寸除以100得到css中的尺寸，比如下图：
 
@@ -214,7 +212,7 @@ devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已
 ![font-size]({{ site.baseurl }}/assets/images/160106b/26.png)
 在devicePixelRatio为3的时候，scale为0.3333
 
-这么做目的当然是为了保证页面的大小与设计稿保持一致了，比如设计稿如果是750的横向分辨率，那么实际页面的device-width，以iphone6来说，也等于750，这样的话设计稿上标注的尺寸只要除以某一个值就能够转换为rem了。通过js设置viewport的方法如下：
+这么做目的当然是为了保证页面的大小与设计稿保持一致了，比如设计稿如果是750的横向分辨率，那么实际页面的device-width，以iPhone6来说，也等于750，这样的话设计稿上标注的尺寸只要除以某一个值就能够转换为rem了。通过js设置viewport的方法如下：
 
 	var scale = 1 / devicePixelRatio;
 	document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
