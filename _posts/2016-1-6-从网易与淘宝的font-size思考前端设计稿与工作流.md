@@ -62,15 +62,11 @@ author : 流云诸葛
 
 这个规则是一套基本的适配规则，对于这种简单app来说已经足够，同时它也是后面要说的rem布局的基础。另外对于拉勾这种app可能需要额外媒介查询对布局进行调整的就是小屏幕设备。举例来说，因为现在很多设计稿是根据iPhone6的尺寸来的，而iphon6设备宽的逻辑的像素是375px，而iPhone4的逻辑像素是320个像素，所以如果你根据设计稿做出来的东西，在iPhone4里面可能显示不下，比如说拉钩网底部那个下载框，你对比看下就知道了，
 
-这是4：
+|iPhone4|iPhone6|
+|-|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/5.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/6.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/5.png)
-
-这是6：
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/6.png)
-
-6下面两边的间距比4多很多，说明拉勾对4肯定是做过适配的，从代码也可以证实这一点：
+iPhone6下面两边的间距比iPhone4多很多，说明拉勾对4肯定是做过适配的，从代码也可以证实这一点：
 
 ![font-size]({{ site.baseurl }}/assets/images/160106b/7.png)
 
@@ -82,15 +78,11 @@ author : 流云诸葛
 
 先来看看网易在不同分辨率下，呈现的效果：
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/8.png)
+|320x680|375x680|414x680|500x680|
+|-|-|-|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/8.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/9.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/10.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/11.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/9.png)
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/10.png)
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/11.png)
-
-从上面几张图可以看出，随着分辨率的增大，页面的效果会发生明显变化，主要体现在各个元素的宽高与间距。375*680的比320*680的导航栏明显要高。能够达到这种效果的根本原因就是因为网易页面里除了`font-size`之外的其它css尺寸都使用了rem作为单位，比如你看导航栏的高度设置代码：
+从上面几张图可以看出，随着分辨率的增大，页面的效果会发生明显变化，主要体现在各个元素的宽高与间距。375x680的比320x680的导航栏明显要高。能够达到这种效果的根本原因就是因为网易页面里除了`font-size`之外的其它css尺寸都使用了rem作为单位，比如你看导航栏的高度设置代码：
 
 ![font-size]({{ site.baseurl }}/assets/images/160106b/12.png)
 
@@ -113,19 +105,23 @@ author : 流云诸葛
 
 ![font-size]({{ site.baseurl }}/assets/images/160106b/14.png)
 
-根据这个可以肯定它的设计稿竖着时的横向分辨率为640。然后你再看看网易在分辨率为320*680，375*680，414*680，500*680时，html的`font-size`是不是与上面计算的一致：
+根据这个可以肯定它的设计稿竖着时的横向分辨率为640。然后你再看看网易在分辨率为320x680，375x680，414x680，500x680时，html的`font-size`是不是与上面计算的一致：
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/15.png)
-320*680
+|320x680|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/15.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/16.png)
-375*680
+|375x680|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/16.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/17.png)
-414*680
+|414x680|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/17.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/18.png)
-500*680
+|500x680|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/18.png)|
 
 这个deviceWidth通过document.documentElement.clientWidth就能取到了，所以当页面的dom ready后，做的第一件事情就是：
 
@@ -172,11 +168,13 @@ author : 流云诸葛
 
 第二，当deviceWidth大于设计稿的横向分辨率时，html的`font-size`始终等于横向分辨率/body元素宽：
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/20.png)
-640*680
+|640x680|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/20.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/21.png)
-641*680
+|641x680|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/21.png)|
 
 之所以这么干，是因为当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站了。事实就是这样，你从手机访问网易，看到的是触屏版的页面，如果从pad访问，看到的就是电脑版的页面。如果你也想这么干，只要把总结中第三步的代码稍微改一下就行了：
 
@@ -188,11 +186,9 @@ author : 流云诸葛
 
 看看淘宝在不同分辨率下，呈现的效果：
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/22.png)
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/23.png)
-
-![font-size]({{ site.baseurl }}/assets/images/160106b/24.png)
+|iPhone4|iPhone6|iPhone6plus|
+|-|-|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/22.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/23.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/24.png)|
 
 淘宝的效果跟网易的效果其实是类似的，随着分辨率的变化，页面元素的尺寸和间距都相应变化，这是因为淘宝的尺寸也是使用了rem的原因。在介绍它的做法之前，先来了解一点关于viewport的知识，通常我们采用如下代码设置viewport:
 
