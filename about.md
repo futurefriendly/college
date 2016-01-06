@@ -26,5 +26,6 @@ permalink: /about.html
 
 ####鸣谢支持（场地提供）
 
-[![腾讯网]({{ site.baseurl }}/assets/images/logo/qq.jpg)](http://www.qq.com)
-
+||
+|-|
+|[![腾讯网]({{ site.baseurl }}/assets/images/logo/qq.jpg)](http://www.qq.com)|
