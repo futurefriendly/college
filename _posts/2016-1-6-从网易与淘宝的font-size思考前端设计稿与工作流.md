@@ -202,11 +202,13 @@ iPhone6下面两边的间距比iPhone4多很多，说明拉勾对4肯定是做�
 
 devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已知，并且不变的，目前高清屏，普遍都是2，不过还有更高的，比如2.5, 3 等，我魅族note的手机的devicePixelRatio就是3。淘宝触屏版布局的前提就是viewport的scale根据devicePixelRatio动态设置：
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/25.png)
-在devicePixelRatio为2的时候，scale为0.5
+|在devicePixelRatio为2的时候，scale为0.5|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/25.png)|
 
-![font-size]({{ site.baseurl }}/assets/images/160106b/26.png)
-在devicePixelRatio为3的时候，scale为0.3333
+|在devicePixelRatio为3的时候，scale为0.3333|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/26.png)|
 
 这么做目的当然是为了保证页面的大小与设计稿保持一致了，比如设计稿如果是750的横向分辨率，那么实际页面的device-width，以iPhone6来说，也等于750，这样的话设计稿上标注的尺寸只要除以某一个值就能够转换为rem了。通过js设置viewport的方法如下：
 
