@@ -233,18 +233,18 @@ devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已
 
 接下来要解决的问题是，元素的尺寸该如何计算，比如说设计稿上某一个元素的宽为150px，换算成rem应该怎么算呢？这个值等于设计稿标注尺寸/该设计稿对应的html的`font-size`。拿淘宝来说的，他们用的设计稿是750的，所以html的`font-size`就是75，如果某个元素时150px的宽，换算成rem就是150 / 75 = 2rem。总结下淘宝的这些做法：
 
-- 1 动态设置viewport的scale
+**1 动态设置viewport的scale**
 
 	var scale = 1 / devicePixelRatio;
 	document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
 
-- 2 动态计算html的`font-size`
+**2 动态计算html的`font-size`**
 
 	document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
 
-- 3 布局的时候，各元素的css尺寸=设计稿标注尺寸/设计稿横向分辨率/10
+**3 布局的时候，各元素的css尺寸=设计稿标注尺寸/设计稿横向分辨率/10**
 
-- 4 `font-size`可能需要额外的媒介查询，并且`font-size`不使用rem，这一点跟网易是一样的。
+**4 `font-size`可能需要额外的媒介查询，并且`font-size`不使用rem，这一点跟网易是一样的。**
 
 最后还有一个情况要说明，跟网易一样，淘宝也设置了一个临界点，当设备竖着时横向物理分辨率大于1080时，html的`font-size`就不会变化了，原因也是一样的，分辨率已经可以去访问电脑版页面了。
 
@@ -260,7 +260,7 @@ devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已
 
 ##5. 比较网易与淘宝的做法
 
-共同点：
+**共同点：**
 
 1 都能适配所有的手机设备，对于pad，网易与淘宝都会跳转到pc页面，不再使用触屏版的页面  
 2 都需要动态设置html的`font-size`  
@@ -268,7 +268,7 @@ devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已
 4 容器元素的`font-size`都不用rem，需要额外地对`font-size`做媒介查询  
 5 都能应用于尺寸不同的设计稿，只要按以上总结的方法去用就可以了
 
-不同点：
+**不同点：**
 
 1 淘宝的设计稿是基于750的横向分辨率，网易的设计稿是基于640的横向分辨率，还要强调的是，虽然设计稿不同，但是最终的结果是一致的，设计稿的尺寸一个公司设计人员的工作标准，每个公司不一样而已  
 2 淘宝还需要动态设置viewport的scale，网易不用  
