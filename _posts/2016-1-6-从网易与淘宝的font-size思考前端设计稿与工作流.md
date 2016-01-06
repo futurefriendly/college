@@ -82,11 +82,11 @@ iPhone6下面两边的间距比iPhone4多很多，说明拉勾对4肯定是做�
 
 先来看看网易在不同分辨率下，呈现的效果：
 
-|320x680|375x680|
+|iPhone4|iPhone6|
 |-|-|
 |![font-size]({{ site.baseurl }}/assets/images/160106b/8.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/9.png)|
 
-|414x680|500x680|
+|iPhone6plus|500x680|
 |-|-|
 |![font-size]({{ site.baseurl }}/assets/images/160106b/10.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/11.png)|
 
