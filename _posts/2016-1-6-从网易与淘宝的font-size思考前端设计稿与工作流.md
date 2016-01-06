@@ -194,9 +194,13 @@ iPhone6下面两边的间距比iPhone4多很多，说明拉勾对4肯定是做�
 
 看看淘宝在不同分辨率下，呈现的效果：
 
-|iPhone4|iPhone6|iPhone6plus|
-|-|-|-|
-|![font-size]({{ site.baseurl }}/assets/images/160106b/22.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/23.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/24.png)|
+|iPhone4|iPhone6|
+|-|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/22.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/23.png)|
+
+|iPhone6plus|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/24.png)|
 
 淘宝的效果跟网易的效果其实是类似的，随着分辨率的变化，页面元素的尺寸和间距都相应变化，这是因为淘宝的尺寸也是使用了rem的原因。在介绍它的做法之前，先来了解一点关于viewport的知识，通常我们采用如下代码设置viewport:
 
