@@ -129,24 +129,24 @@ iPhone6下面两边的间距比iPhone4多很多，说明拉勾对4肯定是做�
 
 这个6.4怎么来的，当然是根据设计稿的横向分辨率/100得来的。下面总结下网易的这种做法：
 
-- 1 先拿设计稿竖着的横向分辨率除以100得到body元素的宽度：
+**1 先拿设计稿竖着的横向分辨率除以100得到body元素的宽度：**
 
 	如果设计稿基于iPhone6，横向分辨率为750，body的width为750 / 100 = 7.5rem
 	如果设计稿基于iPhone4/5，横向分辨率为640，body的width为640 / 100 = 6.4rem
 
-- 2 布局时，设计图标注的尺寸除以100得到css中的尺寸，比如下图：
+**2 布局时，设计图标注的尺寸除以100得到css中的尺寸，比如下图：**
 
 ![font-size]({{ site.baseurl }}/assets/images/160106b/19.png)
 
 播放器高度为210px，写样式的时候css应该这么写：`height`: 2.1rem。之所以取一个100作为参照，就是为了这里计算rem的方便！
 
-- 3 在dom ready以后，通过以下代码设置html的`font-size`:
+**3 在dom ready以后，通过以下代码设置html的`font-size`:**
 
 	document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
 
 6.4只是举个例子，如果是750的设计稿，应该除以7.5。 
 
-- 4 `font-size`可能需要额外的媒介查询，并且`font-size`不能使用rem，如网易的设置：
+**4 `font-size`可能需要额外的媒介查询，并且`font-size`不能使用rem，如网易的设置：**
 
 	@media screen and (max-width:321px){
 	    .m-navlist{font-size:15px}
