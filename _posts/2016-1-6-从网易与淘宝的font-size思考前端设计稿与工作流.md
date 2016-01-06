@@ -47,9 +47,13 @@ author : 流云诸葛
 
 我觉得有些web app并一定很复杂，比如拉勾网，你看看它的页面在iPhone4,iPhone6,ipad下的样子就知道了：
 
-|iPhone4|iPhone6|iPhone6plus|
-|-|-|-|
-|![font-size]({{ site.baseurl }}/assets/images/160106b/1.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/2.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/3.png)|
+|iPhone4|iPhone6|
+|-|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/1.png)|![font-size]({{ site.baseurl }}/assets/images/160106b/2.png)|
+
+|iPhone6plus|
+|-|
+|![font-size]({{ site.baseurl }}/assets/images/160106b/3.png)|
 
 它的页面有一个特点，就是：
 
