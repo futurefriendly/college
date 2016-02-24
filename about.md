@@ -24,11 +24,9 @@ permalink: /about.html
     </span>
 </div>
 
-## VIP内容提供：
-
-[C7210](http://www.beforweb.com/)（上海ISUX）
-
-[Wanfor](http://www.bbetter.me/)（上海ISUX）
+|VIP内容提供|
+|-|
+|[C7210](http://www.beforweb.com/)（上海ISUX）、[Wanfor](http://www.bbetter.me/)（上海ISUX）|
 
 |场地提供|
 |-|
