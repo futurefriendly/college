@@ -14,21 +14,21 @@ author : Future Friendly
 本文摘译自Brad Frost的经典分享《[For a Future Friendly Web](https://www.slideshare.net/bradfrostweb/for-a-futurefriendly-web-webvisions-chicago-2012?from_m_app=ios)》，采用的是芝加哥2012版本。  
 Above all, appreciate to Brad Frost's great work.
 
-####P2-P8 现实和思路：如何面对Web的复杂性和不可预测性
+## P2-P8 现实和思路：如何面对Web的复杂性和不可预测性
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/1.jpg)
 
 1. Web不仅是PC上的网页，Web充斥着我们身边的很多设备，比如手机，比如平板，比如智能家居，比如google眼镜，比如apple watch等  
 2. 设备越多，使用场景越复杂，我们不知道以后的Web会发展成什么样子。如何解决未知的问题，就需要我们做出对未来友好的设计
 
-####P9-P18 FFLY之内容策略：设备复杂不足惧，内容是核心
+## P9-P18 FFLY之内容策略：设备复杂不足惧，内容是核心
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/2.jpg)
 
 1. 我们的思维被PC和手机框住了，我们应该大开脑洞，专注于内容和上下文，而非某些设备。  
 2. 我们要创造和用户预期相关的，符合用户诉求目的的内容。不要试图考验用户的耐心，用户在Web上只关注自己需要的内容，除此以外，别的都是狗屎。我们最迫切需要满足的，是用户专注于内容的渴望。
 
-####P19-P39 FFLY之内容包围用户：使用场景复杂不足惧 内容无处不在
+## P19-P39 FFLY之内容包围用户：使用场景复杂不足惧 内容无处不在
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/3.jpg)
 
@@ -38,7 +38,7 @@ Above all, appreciate to Brad Frost's great work.
 4. 移动Web的独特用户习惯：用户在移动场景下使用移动Web的习惯来自桌面PC的Web体验和移动APP的用户体验习惯的混合  
 5. 移动用户会尝试做任何在桌面电脑上做的事：有的时候和小伙伴们讨论，有人发言说*“你想多了，移动用户不会这么搞”*  ——这才是胡说八道，用户有多变态，你知道吗！人们在移动设备上做各种各样的事情，比方说买珠宝钻石（Brad Frost做过Tiffany的官网）。
 
-####P40-P46 FFLY之内容策略：
+## P40-P46 FFLY之内容策略：
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/4.jpg)
 
@@ -47,7 +47,7 @@ Above all, appreciate to Brad Frost's great work.
 1. 我们的目标：提供更多的和用户预期相关的内容，支持更多的使用场景  
 2. 我们需要做出的努力：改善你的内容，不要拒绝用户，去发现更多的设计和技术的可能性吧
 
-####P47-P56 FFLY之响应式设计
+## P47-P56 FFLY之响应式设计
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/5.jpg)
 
@@ -55,7 +55,7 @@ Above all, appreciate to Brad Frost's great work.
 
 响应式设计不是灵丹妙药，只是迈出了实质的一步
 
-####P57-P111 FFLY之适应性设计原则
+## P57-P111 FFLY之适应性设计原则
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/6.jpg)
 
@@ -65,7 +65,7 @@ Above all, appreciate to Brad Frost's great work.
 4. 增强体验（响应式设计不是一个尺寸适应所有设备，渐进增强，从小到大设计，“支持xx”和“面向xx优化”是不同的）  
 5. 未来友好（拥抱未知，向前向后兼容）
 
-####P112 怎么开始
+## P112 怎么开始
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/7.jpg)
 
@@ -75,7 +75,7 @@ Above all, appreciate to Brad Frost's great work.
 2. 不可忽视的现实是，老网站的一些老旧代码亟待优化，虽然会遇到很多困难，我们需要迎难而上，首先埋下一颗种子，一点点将技术推陈出新，老网站的每一个细胞终究会被新技术替代。  
 3. 用户不在乎你的网站是不是响应式设计的，不在乎你的网站是不是为每个设备单独设计的，他们只在乎在当前设备上能否完成他们想要完成的任务
 
-####P125 总结
+## P125 总结
 
 ![面向未来的友好设计]({{ site.baseurl }}/assets/images/150423/9.jpg)
 
