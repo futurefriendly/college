@@ -24,6 +24,10 @@ permalink: /about.html
     </span>
 </div>
 
+|书院分舵|
+|-|
+|NDC腾讯网媒产品技术中心、阿里巴巴iDST大数据UED设计中心、京东数字营销架构研发组、滴滴出行Disign设计中心、MDC新浪移动用户体验设计中心|
+
 |VIP内容提供|
 |-|
 |[C7210](http://www.beforweb.com/)（腾讯ISUX上海）、[Wanfor](http://www.bbetter.me/)（腾讯ISUX深圳）|
