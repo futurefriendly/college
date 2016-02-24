@@ -6,7 +6,7 @@ permalink: /about.html
 
 <div id="pageId" title="5"></div>
 
-####書院介紹
+<h4>書院介紹</h4>
 
 書以明志。學以致用。做關心傳統文化的互聯網人。
 
@@ -14,7 +14,7 @@ permalink: /about.html
 
 {{ site.description_en }}
 
-####欢迎投稿
+<h4>欢迎投稿</h4>
 
 书院接受投稿，以markdown格式为佳，投稿方式请点击下方按鈕。 如有疑问，請在 [这里](http://futurefriendly.cn/college/contact.html) 反馈给我们。
 
@@ -24,7 +24,9 @@ permalink: /about.html
     </span>
 </div>
 
-####鸣谢支持
+<h4>鸣谢支持</h4>
+
+[C7210](http://www.beforweb.com/)
 
 |场地提供|
 |-|
