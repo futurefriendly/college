@@ -97,7 +97,7 @@ author : 問津書院 长春
 ![UserEmmet]({{ site.baseurl }}/assets/images/160229/02.png)
 
 
-**第2步：重启Sublime**
+**第3步：重启Sublime**
 
 - 选中会看到编辑器的底部左下角`loading`进度条，安装完后，重启Sublime Text 编辑器即可。
 - 重启Sublime后在`Perferences`-> `package settings`中看到有`Emmet`这一项，则表明安装成功。
