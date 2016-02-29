@@ -128,14 +128,14 @@ author : 問津書院 长春
 ![UserEmmet]({{ site.baseurl }}/assets/images/160229/04.png)
 
 	{
-		"snippets": {
-			"html": {
-				"abbreviations": {
-					"docweb":"html>(head>meta[charset=${charset}]+meta[content=\"width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no\" name=\"viewport\"]+meta[content=\"yes\" name=\"apple-mobile-web-app-capable\"]+meta[content=\"black\" name=\"apple-mobile-web-app-status-bar-style\"]+meta[content=\"telephone=no\" name=\"format-detection\"]+meta[content=\"email=no\" name=\"format-detection\"]+title{${1:Document}})+body",
-					"html:web":"!!!+docweb"
-				}
-			}
-		}
+	  "snippets": {
+	    "html": {
+	      "abbreviations": {
+	        "docweb":"html>(head>meta[charset=${charset}]+meta[content=\"width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no\" name=\"viewport\"]+meta[content=\"yes\" name=\"apple-mobile-web-app-capable\"]+meta[content=\"black\" name=\"apple-mobile-web-app-status-bar-style\"]+meta[content=\"telephone=no\" name=\"format-detection\"]+meta[content=\"email=no\" name=\"format-detection\"]+title{${1:Document}})+body",
+	        "html:web":"!!!+docweb"
+	      }
+	    }
+	  }
 	}
 
 
@@ -159,9 +159,6 @@ author : 問津書院 长春
 
 	</body>
 	</html>
-
-
-
 
 ## 总结
 
