@@ -30,7 +30,7 @@ permalink: /about.html
 
 |VIP内容提供|
 |-|
-|[C7210](http://www.beforweb.com/)（腾讯ISUX上海）<br />[Wanfor](http://www.bbetter.me/)（腾讯ISUX深圳）|
+|[大傻小子贾光佐](http://weibo.com/p/1005053157163172)<br />[C7210](http://www.beforweb.com/)（腾讯ISUX上海）<br />[Wanfor](http://www.bbetter.me/)（腾讯ISUX深圳）|
 
 |场地提供|
 |-|
