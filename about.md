@@ -32,6 +32,6 @@ permalink: /about.html
 |-|
 |[大傻小子贾光佐](http://weibo.com/p/1005053157163172)（北京大学哲学系）<br />[C7210](http://www.beforweb.com/)（腾讯ISUX上海）<br />[Wanfor](http://www.bbetter.me/)（腾讯ISUX深圳）|
 
-|场地提供|
+|合作和鸣谢|
 |-|
-|[![腾讯网]({{ site.baseurl }}/assets/images/logo/qq.jpg)](http://www.qq.com)|
+|[![腾讯网]({{ site.baseurl }}/assets/images/logo/qq.jpg)](http://www.qq.com) [![异步社区]({{ site.baseurl }}/assets/images/logo/epubit.png)](http://www.epubit.com.cn)|
