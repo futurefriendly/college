@@ -142,12 +142,14 @@
 
 .commentarea{ padding:30px 20px 50px; background:#fff;}
 .commentarea .inner{ max-width:$content-width; margin:0 auto;}
+.commentarea .content{ line-height:1.75em; font-family:Helvetica,Arial,Kaiti,serif;}
 .commentarea h3{ color:#b58e5b; font-size:24px; text-transform:uppercase; font-weight:bold; line-height:1.2em}
 
 .detailarea{ padding:30px 20px 50px; background:#fff; word-wrap:break-word}
 .detailarea .inner{ max-width:$content-width; margin:0 auto;}
 .detailarea h1{ color:#b58e5b; font-size:30px; text-transform:uppercase; font-weight:bold; line-height:1.2em}
 .detailarea h3{ color:#b58e5b; font-size:24px; text-transform:uppercase; font-weight:bold; line-height:1.2em}
+.detailarea .content p{ font-size:20px; font-size:1.25rem}
 .detailarea .info{ margin-bottom:30px}
 
 .detailarea .content h1,
