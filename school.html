@@ -13,7 +13,7 @@ layout: default
             {% if post.category contains 'school' %}
             <li class="item">
                 <div class="bd">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="lk" href="{{ post.url | prepend: site.baseurl }}">
                         <span class="t1">{{ post.title }}</span>
                         <span class="t2">{{ post.date | date: "%Y-%m-%d" }}</span>
                     </a>
