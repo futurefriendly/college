@@ -10,7 +10,7 @@ permalink: /about.html
 
 我们是北京互联网圈里最有内涵的一群小伙伴，我们的Slogan是——
 
-{{ site.description }}
+> {{ site.description }}
 
 ## 歡迎投稿
 
