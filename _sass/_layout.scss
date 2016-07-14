@@ -137,8 +137,13 @@
 .bannerarea .txtarea .inner{ width:100%; padding-top:50px; max-width:$content-width; margin:0 auto;}
 .bannerarea .txtarea .inner .con{ float:left; background:rgba(0,0,0,.7); color:#fff; padding:30px; font-size:18px}
 
-.notelist .item{ margin-bottom:10px}
-.notelist .item .lk{ color:#22513d; text-decoration:none;}
+.notelist{ margin-left:0}
+.notelist .item{ width:100%; float:left;}
+.notelist .item .bd{ padding:5px}
+.notelist .item .lk{ display:block; padding:20px; padding:1.25rem; color:#22513d; background-color:#f4f4f4; text-decoration:none;}
+.notelist .item .t1,
+.notelist .item .t2{ display:block;}
+.notelist .item .t1{ line-height:1.75em; height:3.5em; overflow:hidden;}
 
 .commentarea{ padding:30px 20px 50px; background:#fff;}
 .commentarea .inner{ max-width:$content-width; margin:0 auto;}
@@ -222,6 +227,7 @@
     .bannerarea:hover .owl-next{ opacity:.5}
     .bannerarea .owl-prev:hover,
     .bannerarea .owl-next:hover{ opacity:1}
+    .notelist .item{ width:50%;}
 }
 .tophold{ display:none\9}
 .navarea{ position:static\9;}
