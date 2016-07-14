@@ -143,7 +143,7 @@
 .notelist .item .lk{ display:block; padding:20px; padding:1.25rem; color:#22513d; background-color:#f4f4f4; text-decoration:none;}
 .notelist .item .t1,
 .notelist .item .t2{ display:block;}
-.notelist .item .t1{ line-height:1.75em; height:3.5em; overflow:hidden;}
+.notelist .item .t1{ line-height:1.5em; font-family:Helvetica,Arial,Kaiti,serif; overflow:hidden;}
 .notelist .item .t2{ text-align:right; color:#999; font-size:14px; font-size:.875rem}
 
 .commentarea{ padding:30px 20px 50px; background:#fff;}
@@ -229,6 +229,7 @@
     .bannerarea .owl-prev:hover,
     .bannerarea .owl-next:hover{ opacity:1}
     .notelist .item{ width:50%;}
+    .notelist .item .t1{ height:4.5em;}
 }
 .tophold{ display:none\9}
 .navarea{ position:static\9;}
