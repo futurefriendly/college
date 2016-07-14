@@ -12,7 +12,12 @@ layout: default
             {% for post in site.posts %}
             {% if post.category contains 'activity' %}
             <li class="item">
-                {{ post.schedule_t }}, {{ post.schedule_m }} {{ post.schedule_d }}, {{ post.schedule_y }}, <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <div class="bd">
+                    <a class="lk" href="{{ post.url | prepend: site.baseurl }}">
+                        <span class="t1">{{ post.title }}</span>
+                        <span class="t2">{{ post.schedule_t }}, {{ post.schedule_m }}-{{ post.schedule_d }}-{{ post.schedule_y }}</span>
+                    </a>
+                </div>
             </li>
             {% endif %}
             {% endfor %}
