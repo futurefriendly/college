@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div id="pageId" title="6"></div>
+<div class="detailarea">
+    <div class="inner">
+        <h3>白板</h3>
+        <div class="info">
+        </div>
+        <ul class="notelist clear">
+            {% for post in site.posts %}
+            {% if post.category contains 'board' %}
+            <li class="item">
+                <div class="bd">
+                    <a class="lk" href="{{ post.url | prepend: site.baseurl }}">
+                        <span class="t1">{{ post.title }}</span>
+                        <span class="t2">{{ post.date | date: "%Y-%m-%d" }}</span>
+                    </a>
+                </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <p class="rss-subscribe tx_c">
+            <span class="btn btn2" style="display:inline-block">
+                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS訂閱</a>
+            </span>
+        </p>
+
+    </div>
+</div>
