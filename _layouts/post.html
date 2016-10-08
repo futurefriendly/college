@@ -21,6 +21,21 @@ layout: default
         	{{ content }}
         </div>
 
+		<!-- 网易云跟帖 -->
+        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+		<script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+		<script>
+		var cloudTieConfig = {
+		  url: document.location.href, 
+		  sourceId: "",
+		  productKey: "6bc0d04c9a5845a98374e9cc053fac18",
+		  target: "cloud-tie-wrapper"
+		};
+		var yunManualLoad = true;
+		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+		</script>
+		<!-- /网易云跟帖 -->
+
 	    <div id="disqus_thread" style="margin-top:40px"></div>
 	    <script>
 	    /**
